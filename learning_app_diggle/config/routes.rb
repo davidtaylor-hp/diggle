@@ -1,10 +1,9 @@
 LearningAppDiggle::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
   root 'entries#new'
-  resources :entries, only: [:new, :create]
 
+  resources :entries, only: [:new, :create]
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "word" do
+describe Word do
   context "associations" do
     it {should belong_to(:entry)}
   end

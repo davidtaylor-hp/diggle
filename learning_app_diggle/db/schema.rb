@@ -14,16 +14,18 @@
 ActiveRecord::Schema.define(version: 20140127234802) do
 
   create_table "definitions", force: true do |t|
-    t.string "text"
+    t.string  "text"
+    t.integer "entry_id"
   end
 
   create_table "entries", force: true do |t|
     t.string "word"
-    t.string "definition"
+    t.string "definitions"
   end
 
   create_table "words", force: true do |t|
-    t.string "text"
+    t.string  "text"
+    t.integer "entry_id"
   end
 
 end

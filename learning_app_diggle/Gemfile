@@ -4,7 +4,6 @@ ruby '2.1.0'
 gem 'rails', '4.0.2'
 
 gem 'heroku_san'
-gem 'jquery-rails'
 gem 'nokogiri'
 gem 'pg'
 gem 'rspec-rails'
@@ -54,6 +53,16 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
+
+gem 'capybara-webkit'
+
+# Debugging Tests
+gem 'launchy'
+
+# This allows for database transactions to refresh during testing with
+# capybara and selenium.
+gem 'database_cleaner', '~> 0.6.7'
+
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

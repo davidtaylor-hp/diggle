@@ -41,4 +41,8 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+  Capybara.javascript_driver = :webkit
+  config.include Rails.application.routes.url_helpers
+
+
 end

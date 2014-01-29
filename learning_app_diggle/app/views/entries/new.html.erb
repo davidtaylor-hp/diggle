@@ -1,7 +1,15 @@
 <div class="entry">
   <h1><center>Diggle</center></h1>
 
-   <div class="submission"></div>
-   <div class="word"></div>
-   <div class="definitions"></div>
+  <%= form_for(@entry) do |f| %>
+    <span>
+      <%= f.text_field :word %>
+    </span>
+
+    <div>
+      <%= f.submit "SEARCH", id: 'search' %>
+    </div>
+  <% end %>
+
+  <div class="definitions"></div>
 </div>
