@@ -1,0 +1,17 @@
+<entry_list version="1.0">
+  <entry id="spelunking">
+    <ew>spelunking</ew>
+    <subj>GE#SP</subj>
+    <hw>spe*lunk*ing</hw>
+    <sound>
+      <wav>spelun02.wav</wav>
+      <wpr>spi-!luN-kiN</wpr>
+    </sound>
+    <pr>-kiŋ</pr>
+    <fl>noun</fl>
+    <def>
+      <date>1944</date>
+      <dt>:the hobby or practice of exploring caves</dt>
+    </def>
+  </entry>
+</entry_list>

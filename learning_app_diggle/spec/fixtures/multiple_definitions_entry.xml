@@ -1,0 +1,57 @@
+<entry_list version="1.0">
+<entry id="<%= word %>[1]">
+  <ew>spunk</ew>
+  <subj>BU-1b</subj>
+  <hw hindex="1">spunk</hw>
+  <sound>
+    <wav>spunk001.wav</wav>
+    <wpr>!spuNk</wpr>
+  </sound>
+  <pr>ˈspəŋk</pr>
+  <fl>noun</fl>
+  <et>
+    Scottish Gaelic
+    <it>spong</it>
+    sponge, tinder, from Middle Irish
+    <it>spongc,</it>
+    from Latin
+    <it>spongia</it>
+    sponge
+  </et>
+  <def>
+    <date>1582</date>
+    <sn>1 a</sn>
+    <dt>
+      :<%= definitions.first %> :
+      <sx>punk</sx>
+    </dt>
+    <sn>b</sn>
+    <sn>2</sn>
+    <dt>
+      :
+      <sx>spirit</sx>
+      <sx>liveliness</sx>
+    </dt>
+  </def>
+</entry>
+<entry id="<%= word %>[2]">
+  <ew>spunk</ew>
+  <subj>DI</subj>
+  <hw hindex="2">spunk</hw>
+  <fl>verb</fl>
+  <def>
+    <vt>intransitive verb</vt>
+    <date>1840</date>
+    <sl>dialect</sl>
+    <% definitions.slice(1..-1).each do |definition| %>
+    <dt>
+      :<%= definition %>
+      <un>
+        usually used with
+        <it>up</it>
+      </un>
+    </dt>
+    <% end %>
+  </def>
+</entry>
+</entry_list>
