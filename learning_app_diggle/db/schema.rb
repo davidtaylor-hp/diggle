@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20140127234802) do
 
   create_table "entries", force: true do |t|
     t.string "word"
-    t.string "definitions"
+    t.string "definition"
   end
 
   create_table "words", force: true do |t|

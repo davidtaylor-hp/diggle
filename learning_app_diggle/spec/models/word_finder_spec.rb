@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe WordFinder do
-  describe '.find' do
+  describe '.lookup' do
     let(:word) { 'apple' }
 
     before do
@@ -17,9 +17,9 @@ describe WordFinder do
       end
 
       it 'creates the entry and definitions' do
-        WebServices::Dictionary.should_receive(:find_definition).with(word)
+        WebServices::DiggleDictionary.should_receive(:look_up).with(word)
 
-        expect { described_class.fetch(word) }.to change { Definition.count }.from(0).to(2)
+        expect { described_class.lookup(word) }.to change { Definition.count }.from(0).to(2)
 
         entry = Entry.last
         expect(entry.word).to eq('apple')
@@ -31,8 +31,6 @@ describe WordFinder do
       let(:test_word) { {word: word, definitions: [] }}
 
       it "doesn't return any definitions" do
-        WebServices::Dictionary.should_receive(:find_definition).with(word)
-        expect(described_class.fetch(word)).to be_nil
         expect { described_class.fetch(word) }.to_not change { Definition.count }
       end
     end

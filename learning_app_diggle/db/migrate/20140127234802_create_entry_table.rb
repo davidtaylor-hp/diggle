@@ -2,7 +2,7 @@ class CreateEntryTable < ActiveRecord::Migration
   def change
     create_table :entries do |t|
       t.string :word
-      t.string :definitions
+      t.string :definition
     end
   end
 end

@@ -1,6 +1,8 @@
 class Entry < ActiveRecord::Base
-  attr_accessible :word, [:definitions]
-
-  has_one :word
   has_many :definitions
+  has_one :word
+
+  def presenter
+    EntryPresenter.new(self)
+  end
 end

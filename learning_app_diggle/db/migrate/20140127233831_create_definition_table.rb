@@ -6,3 +6,4 @@ class CreateDefinitionTable < ActiveRecord::Migration
     end
   end
 end
+

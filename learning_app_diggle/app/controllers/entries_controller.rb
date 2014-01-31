@@ -6,5 +6,6 @@ class EntriesController < ApplicationController
   def create
     word = Entry.new params[:word]
     entry = Entry.find_by(word: params[:entry][:word])
+    render json: entry
   end
 end
